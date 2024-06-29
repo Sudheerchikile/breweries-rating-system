@@ -3,6 +3,7 @@ import axios from 'axios';
 import BreweryItem from '../components/BreweryItem';
 import { setSearchResults } from "../redux/breweriesSlice" 
 import { useDispatch, useSelector } from 'react-redux';
+import api from "../brewey/src/services"
 
 const Home = () => {
     const dispatch=useDispatch();
@@ -17,7 +18,7 @@ const Home = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.get(`/api/breweries`, {
+            const response = await api.get(`/api/breweries`, {
                 params: {
                     [searchBy === 'city' ? 'by_city' : searchBy === 'name' ? 'by_name' : 'by_type']: searchTerm,
             

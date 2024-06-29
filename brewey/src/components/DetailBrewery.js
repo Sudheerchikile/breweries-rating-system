@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReviewForm from "./ReviewForm";
 import axios from "axios";
+import api from "../brewey/src/services"
 
 const DetailBreweryPage = () => {
   const { id } = useParams(); 
@@ -31,7 +32,7 @@ const DetailBreweryPage = () => {
 
   const fetchReviews = async () => {
     try {
-      const response = await axios.get(`/api/add/reviews/${id}`);
+      const response = await api.get(`/api/add/reviews/${id}`);
       // Corrected to axios.get for GET request
       if (response.status !== 200) { // Checking status directly since axios handles it internally
         throw new Error(`HTTP error! Status: ${response.status}`);

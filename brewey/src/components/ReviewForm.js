@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios"
 import {useSelector} from "react-redux"
+import api from "../brewey/src/services"
 
 
 const ReviewForm = ({breweryId,onReviewSubmit}) => {
@@ -17,7 +18,7 @@ const ReviewForm = ({breweryId,onReviewSubmit}) => {
     console.log("submit clicked")
 
     try {
-      const response = await axios.post('/api/add/newReview', {
+      const response = await api.post('/api/add/newReview', {
         breweryId,
         name,
         rating,
@@ -27,7 +28,7 @@ const ReviewForm = ({breweryId,onReviewSubmit}) => {
       console.log('Review added:', response.data);
       
 
-      // Clear form fields or perform other actions upon successful submission
+      
       setName('');
       setRating(0);
       setDescription('');
@@ -35,7 +36,6 @@ const ReviewForm = ({breweryId,onReviewSubmit}) => {
     } catch (error) {
       console.error('Error adding review:', error);
 
-      // Handle error state if needed
     }
   };
   return (

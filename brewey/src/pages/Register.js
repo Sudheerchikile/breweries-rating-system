@@ -5,6 +5,7 @@ import axios from "axios"
 import toast from "react-hot-toast"
 import {showLoading,hideLoading} from "../redux/alertsSlice"
 import {useDispatch} from "react-redux"
+import api from "../brewey/src/services"
 
 const Register = () => {
     const navigate=useNavigate()
@@ -14,7 +15,7 @@ const Register = () => {
       try{
   
        dispatch(showLoading())
-        const response=await axios.post("/api/user/register",values);
+        const response=await api.post("/api/user/register",values);
      
         if(response.data.success){
          

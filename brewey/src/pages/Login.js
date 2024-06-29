@@ -5,6 +5,7 @@ import axios from "axios"
 import {useDispatch} from "react-redux"
 import toast from "react-hot-toast"
 import {showLoading,hideLoading} from "../redux/alertsSlice"
+import api from "../brewey/src/services"
 
 const Login = () => {
   const navigate=useNavigate()
@@ -14,7 +15,7 @@ const Login = () => {
       try{
   
         dispatch(showLoading())
-        const response=await axios.post("/api/user/login",values);
+        const response=await api.post("/api/user/login",values);
      
         if(response.data.success){
           dispatch(hideLoading())
