@@ -74,7 +74,7 @@ const DetailBreweryPage = () => {
           <p>City: {brewery?.city}</p>
           <p>State: {brewery?.state}</p>
           <p>street: {brewery?.street}</p>
-          <p>Website: {brewery?.website_url}</p>
+          <p className="web-url">Website: {brewery?.website_url}</p>
           <p>Phone: {brewery?.phone}</p>
           {/* Add more details as needed */}
         </div>

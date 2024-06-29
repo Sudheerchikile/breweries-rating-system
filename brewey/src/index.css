@@ -238,7 +238,22 @@ label {
 
 .details-form-con{
   display: flex;
- gap:15vw;
+ justify-content: space-around;
+ align-items: center;
+ gap:60px;
+ padding:0 20px;
+}
+
+.web-url{
+  color: blue;
+  font-weight: 500;
+}
+@media (max-width:768px){
+  .details-form-con{
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+  }
 }
 
 .detail-details{

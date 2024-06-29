@@ -6,7 +6,7 @@ const jwt=require("jsonwebtoken");
 const authMiddleware = require("../middlewares/authMiddleware");
 
 
-router.get('/reviews/:breweryId', async (req, res) => {
+router.get('/reviews/:breweryId',authMiddleware, async (req, res) => {
     const { breweryId } = req.params;
     
   
@@ -20,7 +20,7 @@ router.get('/reviews/:breweryId', async (req, res) => {
   });
 
   
-  router.post('/newReview', async (req, res) => {
+  router.post('/newReview',authMiddleware, async (req, res) => {
     const { breweryId, name, rating, description } = req.body;
   
     try {

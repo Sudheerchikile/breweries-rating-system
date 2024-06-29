@@ -13,7 +13,8 @@ const dbConfig=require("./config/dbconfig");
 
 
 const userRouter=require("./routes/userRoute")
-const reviewRouter=require("./routes/reviewRoute")
+const reviewRouter=require("./routes/reviewRoute");
+const authMiddleware = require("./middlewares/authMiddleware");
 
 app.use("/api/user", userRouter);
 app.use("/api/add",reviewRouter);
@@ -29,7 +30,7 @@ app.listen(port,()=>{
 
 
 // Endpoint to handle brewery search
-app.get('/api/breweries', async (req, res) => {
+app.get('/api/breweries',authMiddleware, async (req, res) => {
     const { by_city, by_name, by_type, per_page } = req.query;
 
     let apiUrl = 'https://api.openbrewerydb.org/v1/breweries?';
