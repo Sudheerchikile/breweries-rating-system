@@ -5,7 +5,8 @@ import axios from "axios"
 import {useDispatch} from "react-redux"
 import toast from "react-hot-toast"
 import {showLoading,hideLoading} from "../redux/alertsSlice"
-import api from "../brewey/src/services"
+import api from "../services/api"
+
 
 const Login = () => {
   const navigate=useNavigate()

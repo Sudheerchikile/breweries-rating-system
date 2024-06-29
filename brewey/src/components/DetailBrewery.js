@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReviewForm from "./ReviewForm";
 import axios from "axios";
-import api from "../brewey/src/services"
+import api from "../services/api"
 
 const DetailBreweryPage = () => {
   const { id } = useParams(); 

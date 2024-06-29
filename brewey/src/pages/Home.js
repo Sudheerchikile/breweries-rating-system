@@ -3,7 +3,7 @@ import axios from 'axios';
 import BreweryItem from '../components/BreweryItem';
 import { setSearchResults } from "../redux/breweriesSlice" 
 import { useDispatch, useSelector } from 'react-redux';
-import api from "../brewey/src/services"
+import api from "../services/api"
 
 const Home = () => {
     const dispatch=useDispatch();

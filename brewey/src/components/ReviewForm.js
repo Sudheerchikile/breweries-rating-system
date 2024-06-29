@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios"
+
 import {useSelector} from "react-redux"
-import api from "../brewey/src/services"
+import api from "../services/api"
 
 
 const ReviewForm = ({breweryId,onReviewSubmit}) => {
