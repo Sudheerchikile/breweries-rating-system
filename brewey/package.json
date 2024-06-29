@@ -43,5 +43,5 @@
     ]
     
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "https://mern-moengage-backend.onrender.com"
 }
