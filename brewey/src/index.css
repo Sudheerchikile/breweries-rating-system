@@ -1,0 +1,267 @@
+.main-con{
+  
+  background-color: #005555;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  min-height: 100vh;
+}
+
+.loader-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width:100vw;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.747);
+  z-index: 9999;
+ 
+
+}
+.rate{
+  color:red;
+}
+
+.class-button{
+  border-radius: 8px;
+  border:none;
+  padding:7px;
+  margin-right: 10px;
+color:whitesmoke;
+font-weight: bold;
+  
+  background-color: rgb(44, 88, 209);
+  
+
+
+}
+
+.card{
+  background-color: rgb(112, 170, 85);
+  padding:10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px gray;
+  width:25vw;
+ 
+  
+  
+}
+
+.link-element{
+  color:blue;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+.no-reviews-con{
+  text-align: center;
+}
+/* Home page styles */
+
+.con {
+  
+ 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/022/337/102/small_2x/beer-festival-background-illustration-ai-generative-free-photo.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+
+  
+  min-height:100vh;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.list-group {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+ 
+  gap:13px;
+ 
+}
+
+.list-group-item {
+  padding: 10px 15px;
+ 
+}
+
+
+
+/*.brewery-item{
+  border-radius: 10px;
+  padding:10px;
+  margin-top:10px;
+  background-color: rgb(60, 148, 170);
+  color:whitesmoke;
+ border: 1px solid whitesmoke;
+ 
+
+}
+ */
+
+
+
+.brewery-item{
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+
+}
+
+.brewery-item:hover{
+  scale:1.1;
+}
+
+.reviews-heading{
+  
+}
+
+
+
+
+
+
+.search-bar{
+  width:25vw;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+ 
+}
+
+.radio-group label {
+  margin-right: 15px;
+}
+
+.search-bar-group {
+  display: flex;
+}
+
+.search-bar {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search-button {
+  flex-shrink: 0;
+}
+
+.results-text{
+  color:whitesmoke;
+    font-family: Arial, sans-serif; 
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+.results{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+
+.review-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+ color: rgb(161, 221, 209);
+
+}
+
+.span-elem{
+  margin-left: 25px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.details-form-con{
+  display: flex;
+ gap:15vw;
+}
+
+.detail-details{
+  margin-top: 20px;
+}
+.reviews-con{
+  align-self: flex-start;
+}
+
+.review-form-heading{
+  text-align: center;
+  font-weight: bold;
+}
+
+.reviews-list-con{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+
+.name{
+  font-weight: bold;
+  color: white !important;
+  font-size: 30px;
+}
